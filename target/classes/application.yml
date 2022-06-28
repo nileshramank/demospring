@@ -1,0 +1,18 @@
+server:
+    port: 9090
+    maxHttpHeaderSize: 102400
+
+logging:
+  level:
+    root: DEBUG
+    org.springframework.web: TRACE
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: ash999
+    driverClassName: org.postgresql.Driver
